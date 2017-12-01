@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.wso2.esb.sample.task</groupId>
+    <artifactId>data-population-task</artifactId>
+    <version>SNAPSHOT</version>
+
+    <name>Data Population Task</name>
+    <description>Data Population Task</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+            <version>${synapse.version}</version>
+            <scope>provided</scope>
+        </dependency>
+		<dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-tasks</artifactId>
+            <version>${synapse.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- dependency>
+            <groupId>org.apache.ws.commons.axiom</groupId>
+            <artifactId>axiom-api</artifactId>
+            <version>${axiom.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-kernel</artifactId>
+            <version>${axis2.version}</version>
+            <scope>provided</scope>
+        </dependency-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${com.google.code.gson.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>${commons.logging.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <version>${geronimo.jms.spec.version}</version>
+            <scope>provided</scope>
+        </dependency-->
+    </dependencies>
+
+	<repositories>
+        <repository>
+            <id>wso2-nexus</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+    
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.0</version>
+          <configuration>
+            <source>1.5</source>
+            <target>1.5</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+    
+    <!--properties>
+        <synapse.version>1.1.1-SNAPSHOT</synapse.version>
+        <axis2.version>1.3</axis2.version>
+        <axiom.version>1.2.5</axiom.version>
+        <commons.logging.version>1.1</commons.logging.version>
+        <geronimo.jms.spec.version>1.0</geronimo.jms.spec.version>
+    </properties-->
+	<properties>
+        <synapse.version>2.1.7-wso2v7</synapse.version>
+        <axis2.version>1.6.1-wso2v19</axis2.version>
+        <axiom.version>1.2.11-wso2v11</axiom.version>
+        <com.google.code.gson.version>2.3.1</com.google.code.gson.version>
+        <commons.logging.version>1.1</commons.logging.version>
+        <geronimo.jms.spec.version>1.0</geronimo.jms.spec.version>
+    </properties>
+
+</project>

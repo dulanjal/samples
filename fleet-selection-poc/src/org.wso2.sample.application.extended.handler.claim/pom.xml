@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.wso2.sample</groupId>
+    <artifactId>org.wso2.sample.application.extended.handler.claim</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>WSO2 Carbon Sample - Extended Application Authentication Claim Handler</name>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.authentication.framework</artifactId>
+            <version>5.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.application.common</artifactId>
+            <version>5.7.5</version>
+        </dependency>
+    </dependencies>
+    
+    <repositories>
+		<repository>
+				<id>wso2-nexus</id>
+				<name>WSO2 internal Repository</name>
+				<url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+				<releases>
+					<enabled>true</enabled>
+					<updatePolicy>daily</updatePolicy>
+					<checksumPolicy>ignore</checksumPolicy>
+				</releases>
+			</repository>
+    </repositories>   
+     
+</project>

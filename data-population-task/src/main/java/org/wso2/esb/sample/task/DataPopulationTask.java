@@ -58,6 +58,7 @@ public class DataPopulationTask implements Task, ManagedLifecycle {
 
 	private String rmsEndpoint;
 	private String storeFileLocation;
+	private String name;
 
 	public void execute() {
 		log.debug("DataPopulationTask begin");
